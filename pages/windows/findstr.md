@@ -23,9 +23,9 @@
 
 `findstr /c:"{{query}}" *.txt`
 
-- Find only lines that match the query e[x]actly:
+- Find space-separated string(s) in a piped command's output:
 
-`findstr /x "{{query}}" *`
+`{{dir}} | findstr "{{query}}"`
 
 - Display the line number before each matching line:
 
